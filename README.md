@@ -1,12 +1,12 @@
-#Project: CI/CD Setup with Github, Jenkins, Maven and Tomcat
+# Project: CI/CD Setup with Github, Jenkins, Maven and Tomcat
 
 ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/397e566d-04d5-4876-8e6a-8596b92136e6)
 
-##Overview
+## Overview
 
 This project focuses on setting up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using GitHub, Jenkins, Maven, and Tomcat. The primary objectives include setting up Jenkins, configuring Maven and Git, setting up a Tomcat Server, integrating GitHub, Maven, and Tomcat Server with Jenkins, creating CI and CD jobs, and testing the deployment of a Java web application.
 
-#Table of Contents
+# Table of Contents
 
 1. [Installing and Configuring Tomcat Server]
 2. [Installing and Configuring Maven]
