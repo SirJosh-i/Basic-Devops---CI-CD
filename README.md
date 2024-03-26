@@ -8,9 +8,9 @@ This project focuses on setting up a Continuous Integration/Continuous Deploymen
 
 # Table of Contents
 
-1. [Installing and Configuring Tomcat Server]
-2. [Installing and Configuring Maven]
-3. [Jenkins Pipeline for Maven Java Web App]
+1. Installing and Configuring Tomcat Server
+2. Installing and Configuring Maven
+3. Jenkins Pipeline for Maven Java Web App
 
 ## 1. Installing and Configuring Tomcat Server
 
