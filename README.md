@@ -1,6 +1,7 @@
 # Project: CI/CD Setup with Github, Jenkins, Maven and Tomcat
 
-![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/397e566d-04d5-4876-8e6a-8596b92136e6)
+![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/e7db2155-41e7-4c0b-a865-efc29117003b)
+
 
 ## Overview
 
