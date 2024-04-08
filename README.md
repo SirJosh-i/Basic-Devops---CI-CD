@@ -42,25 +42,25 @@ This section details the Jenkins pipeline for building and deploying Java web ap
 
   - Copy the repository URL.
 
-  On the developer's machine:
+    On the developer's machine:
 
-  ```bash
-  # Create a folder for your project
-  mkdir -p /root/project/mymaven
-  cd /root/project/mymaven/
+    ```bash
+    # Create a folder for your project
+    mkdir -p /root/project/mymaven
+    cd /root/project/mymaven/
 
-  # Clone an existing Maven project or initialize a new one
-  git pull <any existing Maven project>
-  # Remove unnecessary files if any
+    # Clone an existing Maven project or initialize a new one
+    git pull <any existing Maven project>
+    # Remove unnecessary files if any
 
-  # Initialize and push to the new GitHub repository
-  git init
-  git remote add origin <your repo URL>
-  git pull origin master
-  git add -A
-  git commit -m "maven java web app first commit"
-  git push origin master
-  ```
+    # Initialize and push to the new GitHub repository
+    git init
+    git remote add origin <your repo URL>
+    git pull origin master
+    git add -A
+    git commit -m "maven java web app first commit"
+    git push origin master
+    ```
   ### Install the "Deploy to Container" Plugin in Jenkins Master
   Ensure the Jenkins master is set up with the necessary plugins.
   ![Deploy to container plugin download](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/49ec78ee-4a52-4d51-a8fd-99f28670bc3c))
