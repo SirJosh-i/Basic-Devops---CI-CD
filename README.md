@@ -63,7 +63,7 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   ```
   ### Install the "Deploy to Container" Plugin in Jenkins Master
   Ensure the Jenkins master is set up with the necessary plugins.
-  ![deploy-plugin](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/Deploy%20to%20container%20plugin%20download.png)
+  ![deploy-plugin](![Deploy to container plugin download](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/49ec78ee-4a52-4d51-a8fd-99f28670bc3c))
   ```markdown
   - Open Jenkins dashboard.
   - Navigate to "Manage Jenkins" 
@@ -73,7 +73,7 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   - Install the plugin without restarting Jenkins.
   ```
   Start and enable the NTP server:
-  ![start-enable](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/chronyd%20setup.png)
+  ![start-enable](![chronyd setup](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/4d9c5e2b-3eb2-4302-b5c7-77f30ba893d5))
   ```bash
   systemctl start chronyd
   systemctl enable chronyd
@@ -85,13 +85,13 @@ This section details the Jenkins pipeline for building and deploying Java web ap
 
   - Create a new freestyle project.
 
-  ![freestyle-job](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/create%20jenkins%20job.png)
+  ![freestyle-job](![create jenkins job](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/f0f7c94e-c818-4182-bea3-c09a39d25b1a))
   
   - Set Git repository URL and credentials.
   ![git-code](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/add%20repo%20to%20job.png)
 
   - Use "Poll SCM" for build triggers.
-  ![buld-trrigres](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/poll%20scm.png)
+  ![buld-trrigres](![poll scm](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/233d8f0c-944e-48c3-9650-9c52c6104a75))
 
   - Configure build steps for Maven and Invoke top-level Maven target.
-  ![top-level](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/top%20level%20maven.png)
+  ![top-level](![mavin-invoker plugin](![top level maven](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/f1f34954-a988-4b39-936d-3169b6432c27)))
