@@ -36,8 +36,9 @@ This section details the Jenkins pipeline for building and deploying Java web ap
 To start, follow these steps to create a new repository on GitHub for your Java-based web application.
 
 - Login to GitHub.
-- Create a new repository named `mymaven`.
-  ![repo-maven](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/github%20repo.png)
+- Create a new repository named `maven`.
+![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/21fe0211-e5e6-441e-af16-ba19ee6e9907)
+
 - Copy the repository URL.
 
 On the developer's machine:
