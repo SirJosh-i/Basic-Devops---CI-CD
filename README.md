@@ -78,17 +78,7 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   systemctl start chronyd
   systemctl enable chronyd
   ```
-  ### Creating a Jenkins Job for Maven Java Web App Deployment
-  Follow these steps to create a Jenkins job for building and deploying your Java web application.
 
-  - Open Jenkins dashboard.
-
-  - Create a new freestyle project.
-
-  ![create jenkins job](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/f0f7c94e-c818-4182-bea3-c09a39d25b1a))
-  
-  - Set Git repository URL and credentials.
-  ![git-code](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/add%20repo%20to%20job.png)
 
   - Use "Poll SCM" for build triggers.
   ![poll scm](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/233d8f0c-944e-48c3-9650-9c52c6104a75))
