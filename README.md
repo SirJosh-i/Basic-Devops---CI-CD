@@ -19,7 +19,7 @@ This section provides instructions for installing and configuring Tomcat Server 
 
   ### Project File
 
-  Read this file; [Tomcat_config](https://github.com/SirJosh-i/Tomcat-Config.git). It contains the complete instructions for installing and configuring the Tomcat Server.
+  Read this file; [Tomcat_config](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-Config.md). It contains the complete instructions for installing and configuring the Tomcat Server.
 
 ## 2. Installing and Configuring Maven
 
