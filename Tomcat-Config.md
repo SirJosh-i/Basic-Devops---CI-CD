@@ -30,7 +30,7 @@ Apache Tomcat is an application server and a servlet container. Combining the co
     ```bash
     pwd
     ```
-    ![image](https://github.com/SirJosh-i/Tomcat-Config/assets/69949528/15be7631-021e-4116-959a-f063ba9b859e)
+    ![java-pwd](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/java-pwd.png)
   - Copy the displayed path:
     ```bash
      vi /root/.bash_profile
@@ -57,7 +57,7 @@ Apache Tomcat is an application server and a servlet container. Combining the co
      ```
 
    - Download and extract Apache Tomcat:
-     Go to Apache Tomcat's official server and copy the link (.tar.gz) of your preferred            version
+     Go to Apache Tomcat's official server and copy the link (.tar.gz) of your preferred version
      ```bash
      wget <paste the copied link>
      tar -zxvf <download file>.tar.gz
@@ -129,7 +129,7 @@ Apache Tomcat is an application server and a servlet container. Combining the co
       <!--<Valve...>-->
     ```
 Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:http://your-ip_address:8090
-![Apache Tomcat-Server](https://github.com/SirJosh-i/Tomcat-Config/assets/69949528/9d676b49-1980-4c6e-a46e-7148c466d873)
+![Apache Tomcat-Server](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/apache-tomcat.png)
 
 ## 7. Modify JAVA options utilized by Tomcat during startup
   - Config tomcat.conf 
@@ -137,7 +137,7 @@ Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:ht
       nano /usr/share/tomcat/conf/tomcat.conf
     ```
   - Add the following line:
-      JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx256m -         XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"
+      JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx256m -XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"
 
 ## 8. To login to "Manager App"
   ```bash
@@ -155,6 +155,6 @@ Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:ht
     ```
 Now, the tomcat server is installed and configured on your webserver. You can access the manager app with the provided credentials. 
 ## 10. Using the credentials to login into Apache Tomcat
-![Manager-app-login](https://github.com/SirJosh-i/Tomcat-Config/assets/69949528/c8c4dc9c-0717-429c-9a85-6808f1908c66)
+![Manager-app-login](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/tomcat-credentials.png)
 
     
