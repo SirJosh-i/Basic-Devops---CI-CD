@@ -78,10 +78,3 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   systemctl start chronyd
   systemctl enable chronyd
   ```
-
-
-  - Use "Poll SCM" for build triggers.
-  ![poll scm](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/233d8f0c-944e-48c3-9650-9c52c6104a75))
-
-  - Configure build steps for Maven and Invoke top-level Maven target.
-  ![top level maven](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/f1f34954-a988-4b39-936d-3169b6432c27)))
