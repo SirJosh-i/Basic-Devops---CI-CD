@@ -14,12 +14,12 @@ Apache Tomcat is an application server and a servlet container. Combining the co
     ```bash
     alternatives --config java(Select your appropriate version)
     ```
-    ![image](https://github.com/SirJosh-i/Tomcat-Config/assets/69949528/b8f14bb3-5de7-41da-980f-a7cbe8806f78)
+    ![alt-java](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/alternatives-java.png)
   - Check version:
     ```bash
     java --version
     ```
-    ![image](https://github.com/SirJosh-i/Tomcat-Config/assets/69949528/2c4f360c-e59b-4b95-b7a7-0cd58ecb1fc8)
+    ![java-version](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/java-version.png)
     
 ## 2. Set JAVA_HOME Variable Path
   - Goto the path where your java lies:
