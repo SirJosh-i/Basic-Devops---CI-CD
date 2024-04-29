@@ -95,11 +95,6 @@ Apache Tomcat is an application server and a servlet container. Combining the co
     systemctl enable firewalld
     systemctl status firewalld #Checking if the firewall is active.
     ```
-  - Add TCP:
-    ```bash
-    firewall-cmd --add-service=tcp --permanent
-    firewall-cmd --reload
-    ```
   - Allow port: 8090 in Firewall:
     
     ```bash
