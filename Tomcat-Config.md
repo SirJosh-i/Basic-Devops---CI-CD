@@ -175,8 +175,10 @@ tomcatup
   ```bash
     nano /usr/share/tomcat/conf/tomcat-users.xml
    ```
-  - Insert the following in between:
+  - Insert the following:
+    ```bash
     <user  username="admin" password="A-STRONG-PASSWORD" roles="manager-gui,admin-gui"/>
+    ```
     ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/adding-admin-tomcat.png)
   ### Do not forget to edit username and password.
 
