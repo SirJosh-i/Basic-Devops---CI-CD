@@ -1,98 +1,85 @@
-# Installing and Configuring Maven
+# Installing and Configuring Maven on Ubuntu 24.04 LTS
 
-## Power On: JMaster
+## Power On: Ubuntu
 
-### 1. Install Java first
+### 1. Install java
 
-- To install Java
+- Installing java-17-jdk
 ```bash
-yum -y install java
-java -version
-```
-- Remove old version JDK(optional)
-```bash
-yum -y remove (version)
-```
-- Or, choose alternative:
-```bash
-alternatives --config java
+sudo apt-get install openjdk-17-jdk
 ```
 - Check version
 ```bash
 java -version
 ```
 
+### 2.Installing packages for jenkins:
 
-### 2. Set JAVA_HOME Variable Path
+- wget is used to download contents directly from the terminal.
+  #### Difference between yum and wget:
+  - yum is used primarily in RedHat based Linux distributions, to manage software packages and     repositories.
+  - While, wget is commandline utility used for downloading files from the Internet.
 
-```bash
-cd /usr/lib/jvm/java-11<tab>
-```
-```bash
-pwd 
-```
-copy displayed path
+- To install packages, head to the official site of jenkins: [Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
+  ```bash
+      sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-          stable/jenkins.io-2023.key
+      echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"                                 https://pkg.jenkins.io/debian-stable binary/ | sudo tee                                        /etc/apt/sources.list.d/jenkins.list > /dev/null
+  ```
+  
+### 3. Update your system and proceed to install Jenkins
+- Update:
+  ```bash
+  sudo apt-get update
+  ```
+- Install Jenkins:
+  ```bash
+  sudo apt-get install jenkins
+  ```
+- Start, enable and check status of jenkins:
+  ```bash
+  sudo systemctl start jenkins
+  sudo systemctl enable jenkins
+  sudo systemctl status jenkins
+  ```
 
-```bash 
-vi /root/.bash_profile
-```
-Add the following lines to .bash_profile:
-```bash
-JAVA_HOME=(paste the copied path)
-PATH=$PATH:$HOME/bin:$JAVA_HOME
-```
-Then refresh the profile:
-```bash
-. /root/.bash_profile
+### 4. Logging into Jenkins
+- Open firefox in Ubuntu and type in:
+  ```bash
+  localhost:8080
+  ```
+  #### To access jenkins via local machine:
+  - Keep your Ubuntu on
+  - Access a web browser in your local machine
+  - Type in:
+  ```bash
+  your_Ubuntu-ip_address:8080
+  ```
+- Landed in Jenkins?
+  Copy the path given
+- In Ubuntu:
+  ```bash
+  sudo cat <copied path>
+  ```
+- The displayed is your password to Jenkins
+- Head to the website:
+  Paste your copied password
+- Follow along the recommended/prompted instructions.
 
-# OR
 
-source /root/.bash_profile 
-```
-### 3. Installing Maven on JMaster (and Slave Machines if any, Developers if needed)
 
-- make a new dir opt
-```bash
-mkdir /opt
-cd /opt
-```
-- Download and extract Maven
+   
 
-goto the Maven official site and copy .tar.gz binary file link
 
-```bash
-wget <paste the copied link>
-```
-```bash
-tar -zxvf apache-maven<tab>.tar.gz
-```
-### 4. Set M2 and M2_HOME Variable Path
 
-```bash
-cd /opt/apache-maven<tab>
 
-pwd   # Copy the path
 
-vi /root/.bash_profile
-```
-Add the following lines to .bash_profile:
-```bash
-M2_HOME=/opt/apache-maven-3.9.6
-M2=$M2_HOME/bin
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$M2
-```
-Then refresh the profile:
-```bash
-source /root/.bash_profile
-```
-Verify the configuration:
-```bash
-echo $M2_HOME
-echo $M2
-echo $PATH
-mvn -version
-```
 
+
+
+
+
+
+  
 ### 5. Installing Plugin "Maven Invoker"
 - Jenkins dashboard on JMaster
 - Manage Jenkins
