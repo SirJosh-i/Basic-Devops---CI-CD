@@ -134,12 +134,7 @@ vi tomcat-users.xml
 ```
 Add the following lines to tomcat-users.xml:
 ```bash
-<role rolename="Manager-gui"/>
-<role rolename="Manager-script"/>
-<role rolename="Manager-jmx"/>
-<role rolename="Manager-status"/>
-
-<user username="tomcat" password="tomcat123" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+<user username="admin" password="admin" roles="manager-gui"/>
 <user username="deployer" password="deployer123" roles="manager-script"/>
 ```
 Save and exit.
