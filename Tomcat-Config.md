@@ -175,7 +175,7 @@ tomcatup
   ```bash
     nano /usr/share/tomcat/conf/tomcat-users.xml
    ```
-  - Insert the following in between <tomcat-users>...</tomcat-users>
+  - Insert the following in between "<tomcat-users>...</tomcat-users>"
     <user  username="admin" password="A-STRONG-PASSWORD" roles="manager-gui,admin-gui"/>
   ### Do not forget to edit username and password.
 
