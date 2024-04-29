@@ -150,7 +150,7 @@ tomcatup
 ## 1. Installing Tomcat directly from the Internet:
 - Yum is an open-source commandline package installer
   ```bash
-  yum -y install tomca
+  yum -y install tomcat
   ```
 
 ## 2. Modify JAVA options utilized by Tomcat during startup
