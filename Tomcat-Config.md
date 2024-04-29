@@ -132,10 +132,12 @@ Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:ht
       nano /usr/share/tomcat/conf/tomcat.conf
     ```
   - Add the following line:
+    ```bash
       JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx256m -XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"
-
+    ```
 ## 8. To login to "Manager App"
   ```bash
+    nano /usr/share/tomcat/conf/tomcat-users.xml
     <user  username="admin" password="A-STRONG-PASSWORD" roles="manager-gui,admin-gui"/>
   ```
 
