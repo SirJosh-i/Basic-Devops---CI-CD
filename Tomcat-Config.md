@@ -62,6 +62,7 @@ Apache Tomcat is an application server and a servlet container. Combining the co
      wget <paste the copied link>
      tar -zxvf <download file>.tar.gz
      ```
+     
      ```bash
      cd /opt/apache-<tab>/bin
      ```
@@ -126,22 +127,64 @@ Apache Tomcat is an application server and a servlet container. Combining the co
 Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:http://your-ip_address:8090
 ![Apache Tomcat-Server](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/apache-tomcat.png)
 
-## 7. Modify JAVA options utilized by Tomcat during startup
+### 7. Setup Credentials to Login into 'Manager App'
+```bash
+cd /opt/apache-tomcat<tab>/conf
+vi tomcat-users.xml
+```
+Add the following lines to tomcat-users.xml:
+```bash
+<role rolename="Manager-gui"/>
+<role rolename="Manager-script"/>
+<role rolename="Manager-jmx"/>
+<role rolename="Manager-status"/>
+
+<user username="tomcat" password="tomcat123" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+<user username="deployer" password="deployer123" roles="manager-script"/>
+```
+Save and exit.
+
+### 8. Refresh the Changes
+```bash
+tomcatdown
+tomcatup
+```
+
+# Alternative to Tomcat-Installation:
+
+## 1. Installing Tomcat directly from the Internet:
+- Yum is an open-source commandline package installer
+  ```bash
+  yum -y install tomca
+  ```
+
+## 2. Modify JAVA options utilized by Tomcat during startup
   - Config tomcat.conf 
     ```bash
       nano /usr/share/tomcat/conf/tomcat.conf
     ```
+    
   - Add the following line:
     ```bash
-      JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx256m -XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"
+      JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx256m -         XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"
     ```
-## 8. To login to "Manager App"
+
+## 3. Installing Tomcat-webapps and Tomcat-admin-webapps
+  - Allows you to manage deployed web applications.
+    ```bash
+      yum -y install tomcat-webapps tomcat-admin-webapps
+    ```
+    
+## 4. To login to "Manager App"
+  - To utilize previously installed manager webapps, we establish a login for tomcat users
   ```bash
     nano /usr/share/tomcat/conf/tomcat-users.xml
+   ```
+  - Insert the following in between <tomcat-users>...</tomcat-users>
     <user  username="admin" password="A-STRONG-PASSWORD" roles="manager-gui,admin-gui"/>
-  ```
+  ### Do not forget to edit username and password.
 
-## 9. Refresh the changes
+## 5. Refresh the changes
   - Refresh Daemon
     ```bash
     systemctl daemon-reload
@@ -149,10 +192,6 @@ Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:ht
   - Start tomcat
     ```bash
     systemctl start tomcat
-    ```
-    or,
-    ```bash
-    tomcatup
     ```
 Now, the tomcat server is installed and configured on your webserver. You can access the manager app with the provided credentials. 
 
