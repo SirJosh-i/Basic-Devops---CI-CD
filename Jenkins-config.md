@@ -22,8 +22,8 @@ java -version
 
 - To install packages, head to the official site of jenkins: [Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
   ```bash
-      sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-          stable/jenkins.io-2023.key
-      echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"                                 https://pkg.jenkins.io/debian-stable binary/ | sudo tee                                        /etc/apt/sources.list.d/jenkins.list > /dev/null
+      sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+      echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"https://pkg.jenkins.io/debian-stable binary/ | sudo tee \ /etc/apt/sources.list.d/jenkins.list > /dev/null
   ```
   
 ### 3. Update your system and proceed to install Jenkins
@@ -51,9 +51,9 @@ java -version
   - Keep your Ubuntu on
   - Access a web browser in your local machine
   - Type in:
-  ```bash
-  your_Ubuntu-ip_address:8080
-  ```
+    ```bash
+    your_Ubuntu-ip_address:8080
+    ```
 - Landed in Jenkins?
   Copy the path given
 - In Ubuntu:
