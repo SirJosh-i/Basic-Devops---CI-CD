@@ -150,7 +150,12 @@ Now, Open a browser locally or remotely to test the Apache Tomcat server, URL:ht
     ```bash
     systemctl start tomcat
     ```
+    or,
+    ```bash
+    tomcatup
+    ```
 Now, the tomcat server is installed and configured on your webserver. You can access the manager app with the provided credentials. 
+
 ## 10. Using the credentials to login into Apache Tomcat
 ![Manager-app-login](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/tomcat-credentials.png)
 
