@@ -87,9 +87,7 @@ java -version
 - Available
     - Search: Maven Invoker
 - Install without restart
-
-  ![mavin-invoker plugin](https://github.com/SirJosh-i/Maven-Config/assets/69949528/f13cceea-cf0d-40bd-b166-6071116360a1)
-
+  ![mavin-invoker plugin](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/maven%20invoker.png)
 
 ### 6. Specifying JAVA_HOME and M2_HOME Path in Jenkins
 - Jenkins dashboard

@@ -26,7 +26,7 @@ This section provides instructions for installing and configuring Tomcat Server 
 This section provides instructions for installing and configuring Maven as part of the CI/CD pipeline setup. It covers the necessary steps to set up Maven on the Jenkins server, enabling seamless integration for building and packaging Java web applications.
 
   ### Project File
-  Read this file to complete instructions for installing and configuring Maven; [Jenkins-config](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Jenkins-config.md)
+  Read this file to complete instructions for installing and configuring Maven; [Jenkins_maven-config](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Jenkins-config.md)
 
 ## 3. Jenkins Pipeline for Maven Java Web App
 
@@ -78,3 +78,7 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   systemctl start chronyd
   systemctl enable chronyd
   ```
+=======
+# mymaven
+Maven Project - Pushed from Ubuntu
+>>>>>>> mymaven/master
