@@ -86,7 +86,7 @@ Follow these steps to create a Jenkins job for building and deploying your Java 
   ![post-build](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Post%20build%20actions.png)
 
 - Configure container details, including the URL, credentials, and WAR file path.
-  ![global-cred](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/ssh%20key%20-%20tomcat%20-%20jenkins%20global%20config.png)
+  ![global-cred](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/add%20credentials%20-%20admin_tomcat.png)
 
 - Apply and save the configuration.
 
