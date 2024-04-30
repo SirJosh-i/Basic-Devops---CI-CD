@@ -66,3 +66,31 @@ This section details the Jenkins pipeline for building and deploying Java web ap
     -> Search for "Deploy to Container."
   - Install the plugin without restarting Jenkins.
   ```
+### 5. Creating a Jenkins Job for Maven Java Web App Deployment
+Follow these steps to create a Jenkins job for building and deploying your Java web application.
+
+- Open Jenkins dashboard.
+- Create a new freestyle project.
+  ![freestyle-job](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/MyMaven-package.png)
+  
+- Set Git repository URL and credentials.
+  ![git-code](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Git-integration-jenkins.png)
+
+- Use "Poll SCM" for build triggers.
+  ![buld-trrigres](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Poll%20SCM.png)
+
+- Configure build steps for Maven and Invoke top-level Maven target.
+  ![top-level](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Invoke%20top%20level%20-%20Maven%20targets.png)
+
+- Add a post-build action to deploy the WAR file to a Tomcat container.
+  ![post-build](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Post%20build%20actions.png)
+
+- Configure container details, including the URL, credentials, and WAR file path.
+  ![global-cred](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/ssh%20key%20-%20tomcat%20-%20jenkins%20global%20config.png)
+
+- Apply and save the configuration.
+
+Access your deployed web application at http://your-ip-address/javaweb.
+
+  ![webserver-output](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Tomcat-pics/deployed%20-%20tomcat.png)
+
