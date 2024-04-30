@@ -65,21 +65,6 @@ java -version
   Paste your copied password
 - Follow along the recommended/prompted instructions.
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-  
 ### 5. Installing Plugin "Maven Invoker"
 - Jenkins dashboard on JMaster
 - Manage Jenkins
@@ -99,50 +84,46 @@ java -version
             - Uncheck "Install automatically"
 
         - Add Maven
-          
-          ![mavin install on jenkins](https://github.com/SirJosh-i/Maven-Config/assets/69949528/d8e892d4-6c7e-4bc9-adc9-c1700be7810e)
-
+          ![mavin install on jenkins](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Maven-Configuration-Jenkins.png)
           
             - Name: Maven
             - MAVEN_HOME: /opt/apache-maven-<version>
             - Uncheck "Install automatically"
 
-Apply and Save
+#### Apply and Save
 
 ### 7. Creating Java-Based Web Application Using Maven
 ```bash
 mkdir -p /opt/mymaven
 cd /opt/mymaven
 ```
-Search a web app Maven project in Google (copy)
 
-Example : 
-
+- Search a web app Maven project in Google (copy)
 ```bash
 mvn archetype:generate -DgroupId=com.javaweb -DartifactId=javaweb -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
 
+- Go to javaweb directory
 ```bash
 cd javaweb
-```
-you can also Push the project to GitHub so that it can be pulled on developer machines later on.
-
-```bash
 ls
 ```
-To compile the code using Maven, it must be compiled from the path having POM.xml
+
+- To compile the code using Maven, it must be compiled from the path having POM.xml  
 ```bash
 mvn compile
 ```
-Packaging the web app into a WAR file (which will be deployed in the application server)
+
+- Packaging the web app into a WAR file (which will be deployed in the application server)
 ```bash
 mvn package
 ```
-After compile and package, a .war file will be created, which is the Java-based web app artifact.
+![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mvn-package-success.png)
+
+- After compile and package, a .war file will be created, which is the Java-based web app artifact.
 ```bash
 cd target
-
 ls
 ```
-Now you are done with installing and Configuring maven on JMaster.
+#### Now you are done with installing and Configuring maven on JMaster.
 
