@@ -50,6 +50,9 @@ This section details the Jenkins pipeline for building and deploying Java web ap
       
       # Clone an existing Maven project
       git clone <any existing maven repo>
+      git add .
+      git commit -m "Maven-Web_project"
+      git push origin master
     ```
     
   ### Install the "Deploy to Container" Plugin in Jenkins Master
