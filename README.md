@@ -39,10 +39,9 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   - Login to GitHub.
   - Create a new repository named `mymaven`.
   ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mymaven-repo-created.png)
-
   - Copy the repository URL.
 
-    On the developer's machine:
+  ### On the developer's machine:
 
     ```bash
     # Create a folder for your project
@@ -78,7 +77,3 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   systemctl start chronyd
   systemctl enable chronyd
   ```
-=======
-# mymaven
-Maven Project - Pushed from Ubuntu
->>>>>>> mymaven/master
