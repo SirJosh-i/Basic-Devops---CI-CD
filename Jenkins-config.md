@@ -97,32 +97,30 @@ java -version
 mkdir -p /opt/mymaven
 cd /opt/mymaven
 ```
-Search a web app Maven project in Google (copy)
 
-Example : 
-
+- Search a web app Maven project in Google (copy)
 ```bash
 mvn archetype:generate -DgroupId=com.javaweb -DartifactId=javaweb -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
 
+- Go to javaweb directory
 ```bash
 cd javaweb
-```
-you can also Push the project to GitHub so that it can be pulled on developer machines later on.
-
-```bash
 ls
 ```
-To compile the code using Maven, it must be compiled from the path having POM.xml
+
+- To compile the code using Maven, it must be compiled from the path having POM.xml  
 ```bash
 mvn compile
 ```
-Packaging the web app into a WAR file (which will be deployed in the application server)
+
+- Packaging the web app into a WAR file (which will be deployed in the application server)
 ```bash
 mvn package
 ```
 ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mvn-package-success.png)
-After compile and package, a .war file will be created, which is the Java-based web app artifact.
+
+- After compile and package, a .war file will be created, which is the Java-based web app artifact.
 ```bash
 cd target
 ls
