@@ -41,28 +41,20 @@ This section details the Jenkins pipeline for building and deploying Java web ap
   ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mymaven-repo-created.png)
   - Copy the repository URL.
 
-  ### On the developer's machine:
-
+  ### On the developer's machine
+  #### Clone an existing maven project: Check [Maven_config](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Jenkins-config.md) for more information.
     ```bash
-    # Create a folder for your project
-    mkdir -p /root/project/mymaven
-    cd /root/project/mymaven/
-
-    # Clone an existing Maven project or initialize a new one
-    git pull <any existing Maven project>
-    # Remove unnecessary files if any
-
-    # Initialize and push to the new GitHub repository
-    git init
-    git remote add origin <your repo URL>
-    git pull origin master
-    git add -A
-    git commit -m "maven java web app first commit"
-    git push origin master
+      # Create a folder for your project
+      mkdir -p /root/project/mymaven
+      cd /root/project/mymaven/
+      
+      # Clone an existing Maven project
+      git clone <any existing maven repo>
     ```
+    
   ### Install the "Deploy to Container" Plugin in Jenkins Master
   Ensure the Jenkins master is set up with the necessary plugins.
-  ![Deploy to container plugin download](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/49ec78ee-4a52-4d51-a8fd-99f28670bc3c))
+  ![Deploy to container plugin download](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/49ec78ee-4a52-4d51-a8fd-99f28670bc3c)
   ```markdown
   - Open Jenkins dashboard.
   - Navigate to "Manage Jenkins" 
