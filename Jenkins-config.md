@@ -65,21 +65,6 @@ java -version
   Paste your copied password
 - Follow along the recommended/prompted instructions.
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-  
 ### 5. Installing Plugin "Maven Invoker"
 - Jenkins dashboard on JMaster
 - Manage Jenkins
@@ -99,15 +84,13 @@ java -version
             - Uncheck "Install automatically"
 
         - Add Maven
-          
-          ![mavin install on jenkins](https://github.com/SirJosh-i/Maven-Config/assets/69949528/d8e892d4-6c7e-4bc9-adc9-c1700be7810e)
-
+          ![mavin install on jenkins](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/Maven-Configuration-Jenkins.png)
           
             - Name: Maven
             - MAVEN_HOME: /opt/apache-maven-<version>
             - Uncheck "Install automatically"
 
-Apply and Save
+#### Apply and Save
 
 ### 7. Creating Java-Based Web Application Using Maven
 ```bash
@@ -138,11 +121,11 @@ Packaging the web app into a WAR file (which will be deployed in the application
 ```bash
 mvn package
 ```
+![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mvn-package-success.png)
 After compile and package, a .war file will be created, which is the Java-based web app artifact.
 ```bash
 cd target
-
 ls
 ```
-Now you are done with installing and Configuring maven on JMaster.
+#### Now you are done with installing and Configuring maven on JMaster.
 
