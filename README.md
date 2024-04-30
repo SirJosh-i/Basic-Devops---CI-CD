@@ -38,7 +38,7 @@ This section details the Jenkins pipeline for building and deploying Java web ap
 
   - Login to GitHub.
   - Create a new repository named `mymaven`.
-  ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/21fe0211-e5e6-441e-af16-ba19ee6e9907)
+  ![image](https://github.com/SirJosh-i/Basic-Devops---CI-CD/blob/master/Maven-screenshot/mymaven-repo-created.png)
 
   - Copy the repository URL.
 
