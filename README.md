@@ -71,9 +71,3 @@ This section details the Jenkins pipeline for building and deploying Java web ap
     -> Search for "Deploy to Container."
   - Install the plugin without restarting Jenkins.
   ```
-  Start and enable the NTP server:
-  ![chronyd setup](https://github.com/SirJosh-i/Basic-Devops---CI-CD/assets/69949528/4d9c5e2b-3eb2-4302-b5c7-77f30ba893d5))
-  ```bash
-  systemctl start chronyd
-  systemctl enable chronyd
-  ```
